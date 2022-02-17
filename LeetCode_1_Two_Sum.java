@@ -10,10 +10,10 @@ You can return the answer in any order. */
         public int[] twoSum(int[] nums, int target) {
             Map<Integer,Integer>result=new HashMap();
             for(int i=0;i<nums.length;i++){
-                int rem=target-nums[i];
-                if(result.containsKey(rem))
-                    return new int[]{result.get(rem),i};
-                result.put(nums[i],i);
+                int rem=target-nums[i]; //storing the remaing target in rem
+                if(result.containsKey(rem))  //checking if rem is present on any key
+                    return new int[]{result.get(rem),i}; //returning the position of rem and i.
+                result.put(nums[i],i); //adding i in map.
             }
             return new int[]{0};
         }
