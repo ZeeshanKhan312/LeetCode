@@ -6,7 +6,7 @@ Notice that the solution set must not contain duplicate triplets. */
     //SOLUTION->
     class Solution {
         public List<List<Integer>> threeSum(int[] nums) {
-            Arrays.sort(nums); //sortig the array
+            Arrays.sort(nums); //sorting the array
             List<List<Integer>> list = new LinkedList<>();
             for(int i=0;i<nums.length-2;i++){
                 if(i>0 && nums[i]==nums[i-1])
